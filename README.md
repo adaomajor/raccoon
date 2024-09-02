@@ -18,7 +18,7 @@ whoever@youare:$ raccoon
 ``` bash
 whoever@youare:$ raccon
 ```
-![Raccoon Example](https)
+![Raccoon Example](https://github.com/adaomajor/raccoon/blob/main/raccoon.PNG?raw=true)
 
 ``` bash
 whoever@youare:$ raccon domain.com
