@@ -8,7 +8,7 @@ NC='\033[0m'
 tools=("python3" "go" "assetfinder" "subfinder" "sublist3r" "httprobe" "katana" "waybackurls" "gau" "uro" "gf")
 
 echo -e "$BLUE "
-cat /usr/share/raccoon/banner.txt
+cat /usr/share/raccoon/banner.txt 2>/dev/dull
 echo -e "$NC"
 
 uninstalled=()
@@ -44,7 +44,7 @@ fi
 all_subdomains="all_subdomains"
 alive_subdomains="alive_subdomains"
 
-gf_patterns=("xss" "ssrf" "ssti" "redirect" "sqli" "idor" "lfi" "json" "jwt" "rce" "upload-fields" "xml")
+gf_patterns=("xss" "ssrf" "ssti" "redirect" "sqli" "idor" "lfi" "rce")
 
 echo -e "$GREEN[+] running assetfinder...$NC"
 assetfinder --subs-only $1 > assetfinder.txt
