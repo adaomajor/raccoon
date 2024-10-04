@@ -25,8 +25,8 @@ if [ ${#uninstalled} -gt 0 ]; then
 	echo "[⚠ ] some tools need to be installed!"
 	exit 1
 else
-	sudo rm -rf /usr/share/raccoon
-	sudo rm /usr/bin/raccoon
+	sudo rm -rf /usr/share/raccoon 2>/dev/null
+	sudo rm /usr/bin/raccoon 2>/dev/null
 
 	chmod +x raccoon.sh
 	sudo mkdir /usr/share/raccoon
